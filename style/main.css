@@ -1,11 +1,22 @@
 @import url(fonts/clear-sans.css);
+
+/*new fonts*/
+@import url('http://fonts.googleapis.com/css?family=Megrim');
+@import url('http://fonts.googleapis.com/css?family=Quicksand');
 html, body {
   margin: 0;
   padding: 0;
-  background: #faf8ef;
-  color: #776e65;
-  font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;
-  font-size: 18px; }
+
+    /*new text style*/
+    color: white;
+    font-family: "Quicksand", "Helvetica Neue", Arial, sans-serif;
+    font-size: 18px;
+
+    /*new background*/
+    background: black;
+    background-image: url("../bakcground.jpg");
+    background-repeat: repeat;
+}
 
 body {
   margin: 80px 0; }
@@ -16,7 +27,12 @@ body {
   clear: both; }
 
 h1.title {
-  font-size: 80px;
+    /*new title styling*/
+    font-family:"Megrim";
+    color:white;
+    text-shadow: 0 0 30px white;
+    font-size: 85px;
+
   font-weight: bold;
   margin: 0;
   display: block;
@@ -53,7 +69,10 @@ h1.title {
 .score-container, .best-container {
   position: relative;
   display: inline-block;
-  background: #bbada0;
+
+    /*changing style of score containers*/
+    background: rgba(255, 255, 255, 0.2);
+
   padding: 15px 25px;
   font-size: 25px;
   height: 25px;
@@ -101,7 +120,8 @@ p {
   line-height: 1.65; }
 
 a {
-  color: #776e65;
+    /*changed color for aether*/
+  color: #cbe6ef;
   font-weight: bold;
   text-decoration: underline;
   cursor: pointer; }
@@ -149,7 +169,10 @@ hr {
   -ms-user-select: none;
   -ms-touch-action: none;
   touch-action: none;
-  background: #bbada0;
+
+    /*changing opacity of the game container*/
+    background: rgba(255, 255, 255, 0.2);
+
   border-radius: 6px;
   width: 500px;
   height: 500px;
@@ -220,7 +243,11 @@ hr {
   margin-right: 15px;
   float: left;
   border-radius: 3px;
-  background: rgba(238, 228, 218, 0.35); }
+
+    /*changing style of individual grid-cells*/
+    background: rgba(3, 7, 32, 0.3);
+
+}
   .grid-cell:last-child {
     margin-right: 0; }
 
@@ -306,41 +333,47 @@ hr {
   -moz-transition-property: -moz-transform;
   transition-property: transform; }
   .tile .tile-inner {
+    /*galaxy background for tiles*/
+    background: url("../bakcground.jpg");
     border-radius: 3px;
-    background: #eee4da;
     text-align: center;
     font-weight: bold;
     z-index: 10;
     font-size: 55px; }
   .tile.tile-2 .tile-inner {
-    background: #eee4da;
+    /*background: #eee4da;*/
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0), inset 0 0 0 1px rgba(255, 255, 255, 0); }
   .tile.tile-4 .tile-inner {
-    background: #ede0c8;
+    /*background: #ede0c8;*/
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0), inset 0 0 0 1px rgba(255, 255, 255, 0); }
   .tile.tile-8 .tile-inner {
     color: #f9f6f2;
-    background: #f2b179; }
+    /*background: #f2b179; */
+  }
   .tile.tile-16 .tile-inner {
     color: #f9f6f2;
-    background: #f59563; }
+    /*background: #f59563; */
+  }
   .tile.tile-32 .tile-inner {
     color: #f9f6f2;
-    background: #f67c5f; }
+    /*background: #f67c5f; */
+  }
   .tile.tile-64 .tile-inner {
     color: #f9f6f2;
-    background: #f65e3b; }
+    /*background: #f65e3b; */
+  }
   .tile.tile-128 .tile-inner {
     color: #f9f6f2;
-    background: #edcf72;
+    /*background: #edcf72;*/
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.2381), inset 0 0 0 1px rgba(255, 255, 255, 0.14286);
-    font-size: 45px; }
+    font-size: 45px;
+  }
     @media screen and (max-width: 520px) {
       .tile.tile-128 .tile-inner {
         font-size: 25px; } }
   .tile.tile-256 .tile-inner {
     color: #f9f6f2;
-    background: #edcc61;
+    /*background: #edcc61;*/
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.31746), inset 0 0 0 1px rgba(255, 255, 255, 0.19048);
     font-size: 45px; }
     @media screen and (max-width: 520px) {
@@ -348,7 +381,7 @@ hr {
         font-size: 25px; } }
   .tile.tile-512 .tile-inner {
     color: #f9f6f2;
-    background: #edc850;
+    /*background: #edc850;*/
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.39683), inset 0 0 0 1px rgba(255, 255, 255, 0.2381);
     font-size: 45px; }
     @media screen and (max-width: 520px) {
@@ -356,7 +389,7 @@ hr {
         font-size: 25px; } }
   .tile.tile-1024 .tile-inner {
     color: #f9f6f2;
-    background: #edc53f;
+    /*background: #edc53f;*/
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.47619), inset 0 0 0 1px rgba(255, 255, 255, 0.28571);
     font-size: 35px; }
     @media screen and (max-width: 520px) {
@@ -364,7 +397,7 @@ hr {
         font-size: 15px; } }
   .tile.tile-2048 .tile-inner {
     color: #f9f6f2;
-    background: #edc22e;
+    /*background: #edc22e;*/
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.55556), inset 0 0 0 1px rgba(255, 255, 255, 0.33333);
     font-size: 35px; }
     @media screen and (max-width: 520px) {
@@ -372,7 +405,7 @@ hr {
         font-size: 15px; } }
   .tile.tile-super .tile-inner {
     color: #f9f6f2;
-    background: #3c3a32;
+    /*background: #3c3a32;*/
     font-size: 30px; }
     @media screen and (max-width: 520px) {
       .tile.tile-super .tile-inner {
@@ -487,19 +520,45 @@ hr {
   margin-bottom: 0; }
 
 .restart-button {
+
+/*new button transparent styling*/
+    background: rgba(255, 255, 255, 0.45);
+    color: white;
+
+    font-size:13px;
+    text-transform: uppercase;
+
+    /*shadow*/
+   -webkit-box-shadow: 0px 4px 3px 0px rgba(255, 255, 255,0.3);
+   -moz-box-shadow: 0px 4px 3px 0px rgba(255, 255, 255,0.3);
+   box-shadow: 0px 4px 3px 0px rgba(255, 255, 255,0.3);
+
   display: inline-block;
-  background: #8f7a66;
   border-radius: 3px;
   padding: 0 20px;
   text-decoration: none;
-  color: #f9f6f2;
   height: 40px;
   line-height: 42px;
-  display: block;
   text-align: center;
-  float: right; }
+  float: right;
+}
+
+.restart-button:hover {
+  background: rgba(255, 255, 255, 0.5);
+   -webkit-box-shadow: 0px 3px 3px 0px rgba(255, 255, 255,0.3);
+   -moz-box-shadow: 0px 3px 3px 0px rgba(255, 255, 255,0.3);
+   box-shadow: 0px 3px 3px 0px rgba(255, 255, 255,0.3);
+
+}
+.restart-button:active {
+   -webkit-box-shadow: 0px 2px 3px 0px rgba(255, 255, 255,0.3);
+   -moz-box-shadow: 0px 2px 3px 0px rgba(255, 255, 255,0.3);
+   box-shadow: 0px 2px 3px 0px rgba(255, 255, 255,0.3);
+}
+
 
 .game-explanation {
+    text-align: center;
   margin-top: 50px; }
 
 @media screen and (max-width: 520px) {
