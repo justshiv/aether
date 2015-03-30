@@ -4,10 +4,10 @@ A fork of Gabriele Cirulli's [2048](http://gabrielecirulli.github.io/2048/) cust
 Developed for my User Experience in Games honours module at UCT. [Play here](http://justshiv.github.io/aether/)
 
 ### Screenshot
-Showing in-game play
+Showing in-game play. Coming shortly.
 
 <p align="center">
-  <img src="screenshot.png" alt="Screenshot"/>
+  <img src="" alt="Screenshot"/>
 </p>
 
 

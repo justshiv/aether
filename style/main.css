@@ -34,7 +34,7 @@ body {
 
     /*look of footer*/
     opacity:0.5;
-    margin-top:80px;
+    padding-top:80px;
     font-size:15px;
 }
 
@@ -118,7 +118,7 @@ h1.title {
     font-size: 25px;
     line-height: 25px;
     font-weight: bold;
-    color: rgba(119, 110, 101, 0.9);
+    color: rgba(255, 255, 255, 0.5);
     z-index: 100;
     -webkit-animation: move-up 600ms ease-in;
     -moz-animation: move-up 600ms ease-in;
