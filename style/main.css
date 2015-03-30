@@ -109,7 +109,8 @@ h1.title {
     font-size: 13px;
     line-height: 13px;
     text-align: center;
-    color: #eee4da; }
+    color: white;
+  }
   .score-container .score-addition, .best-container .score-addition {
     position: absolute;
     right: 30px;
@@ -583,7 +584,8 @@ hr {
 
 @media screen and (max-width: 520px) {
   html, body {
-    font-size: 15px; }
+    font-size: 14px;
+  }
 
   body {
     margin: 20px 0;
@@ -612,11 +614,10 @@ hr {
     line-height: 1.65; }
 
   .restart-button {
-    width: 42%;
+    width:90px;
+      font-size:11px;
     padding: 0;
-    display: block;
-    box-sizing: border-box;
-    margin-top: 2px; }
+  }
 
   .game-container {
     margin-top: 17px;
@@ -630,7 +631,7 @@ hr {
     -ms-user-select: none;
     -ms-touch-action: none;
     touch-action: none;
-    background: #bbada0;
+    /*background: #bbada0;*/
     border-radius: 6px;
     width: 280px;
     height: 280px;
@@ -701,7 +702,8 @@ hr {
     margin-right: 10px;
     float: left;
     border-radius: 3px;
-    background: rgba(238, 228, 218, 0.35); }
+    /*background: rgba(238, 228, 218, 0.35); */
+  }
     .grid-cell:last-child {
       margin-right: 0; }
 
