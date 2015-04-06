@@ -31,7 +31,6 @@
                 <div class="game-message">
                     <p></p>
                     <div class="lower">
-                        <a class="keep-playing-button">Keep going</a>
                         <a class="retry-button">Try again</a>
                     </div>
                 </div>
@@ -103,7 +102,7 @@
 
     //woosh sound effect when like tiles combine
     var woosh = new Audio('woosh.wav');
-    woosh.volume = 0.5;
+    woosh.volume = 0.1;
     function repeatWoosh(){
         woosh.pause();
         woosh.currentTime = 0;
@@ -113,16 +112,11 @@
 
     var backgroundMusic = new Audio("backgroundSound.wav");
     backgroundMusic.loop = true;
-    backgroundMusic.volume = 0.03;
+    backgroundMusic.volume = 0.02;
     backgroundMusic.addEventListener("ended", function(){
         this.currentTime = 0;
         this.play();
     }, false);
-//    backgroundMusic.play();
-
-
-
-
-
+    backgroundMusic.play();
 
 </script>
