@@ -15,6 +15,8 @@
     outline: none;
     color: #afd2e6;
 	-webkit-animation: rot 2s infinite linear;
+    -moz-animation: rot 2s infinite linear;
+    animation: rot 2s infinite linear;
 }
 
 /*4*/
@@ -34,6 +36,8 @@
     outline: none;
     color: #afd2e6;
 	-webkit-animation: rotNeg 2s infinite linear, glow 6s ease 0s infinite;
+	-moz-animation: rotNeg 2s infinite linear, glow 6s ease 0s infinite;
+	animation: rotNeg 2s infinite linear, glow 6s ease 0s infinite;
 }
 
 
@@ -54,6 +58,8 @@
     outline: none;
     color: rgb(143, 193, 237);
 	-webkit-animation: rot 3s infinite linear, glow 6s ease 0s infinite;
+	-moz-animation: rot 3s infinite linear, glow 6s ease 0s infinite;
+    animation: rot 3s infinite linear, glow 6s ease 0s infinite;
 }
 
 /*16*/
@@ -72,6 +78,8 @@
     outline: none;
     color: rgb(53, 176, 186);
 	-webkit-animation: rotNeg 4s infinite linear, glow 4s ease 0s infinite;
+	-moz-animation: rotNeg 4s infinite linear, glow 4s ease 0s infinite;
+	animation: rotNeg 4s infinite linear, glow 4s ease 0s infinite;
 }
 
 /*32*/
@@ -90,6 +98,8 @@
     outline: none;
     color: rgb(55, 186, 125);
 	-webkit-animation: rot 5s infinite linear, pulse-glow 4s ease 0s infinite;
+	-moz-animation: rot 5s infinite linear, pulse-glow 4s ease 0s infinite;
+	animation: rot 5s infinite linear, pulse-glow 4s ease 0s infinite;
 }
 
 /*64*/
@@ -108,6 +118,8 @@
     outline: none;
     color: rgb(255, 177, 37);
 	-webkit-animation: rot 6s infinite linear, glow 3s ease 0s infinite;
+	-moz-animation: rot 6s infinite linear, glow 3s ease 0s infinite;
+	animation: rot 6s infinite linear, glow 3s ease 0s infinite;
 }
 
 /*128*/
@@ -126,6 +138,8 @@
     outline: none;
     color: rgb(255, 71, 29);
 	-webkit-animation: rot 7s infinite linear, glow 4s ease 0s infinite;
+	-moz-animation: rot 7s infinite linear, glow 4s ease 0s infinite;
+    animation: rot 7s infinite linear, glow 4s ease 0s infinite;
 }
 
 /*256*/
@@ -146,6 +160,8 @@
     outline: none;
     color: rgba(255, 49, 108, 0.73);
 	-webkit-animation: rotNeg 6s infinite linear, pulse-glow 2s ease 0s infinite;
+	-moz-animation: rotNeg 6s infinite linear, pulse-glow 2s ease 0s infinite;
+	animation: rotNeg 6s infinite linear, pulse-glow 2s ease 0s infinite;
 }
 
 
@@ -167,8 +183,11 @@
     outline: none;
     color: rgb(58, 186, 140);
 	-webkit-animation: rotNeg 6s infinite linear, glow 4s ease 0s infinite;
+	-moz-animation: rotNeg 6s infinite linear, glow 4s ease 0s infinite;
+	animation: rotNeg 6s infinite linear, glow 4s ease 0s infinite;
 }
 
+/*CHROME*/
 @-webkit-keyframes rot {
 	from {
 		transform: rotate(0deg)
@@ -213,10 +232,92 @@
     {box-shadow: 0 0 20px 3px;}
 }
 
-.pausedAnimations{
-    -webkit-animation-play-state: paused !important;
+/*FIREFOX*/
+@-moz-keyframes rot {
+	from {
+		transform: rotate(0deg)
+		           translate(-2px, -2px)
+		           rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg)
+		           translate(-2px, -2px)
+		           rotate(-360deg);
+	}
 }
 
-.runningAnimations{
-    -webkit-animation-play-state: running !important;
+@-moz-keyframes rotNeg {
+	from {
+		transform: rotate(0deg)
+		           translate(-2px, -2px)
+		           rotate(0deg);
+	}
+	to {
+		transform: rotate(-360deg)
+		           translate(-2px, -2px)
+		           rotate(360deg);
+	}
+}
+
+@-moz-keyframes glow {
+   0%
+    {box-shadow: 0 0 20px 3px;}
+  50%
+    {box-shadow: 0 0 30px 6px;}
+  100%
+    {box-shadow: 0 0 20px 3px;}
+}
+
+@-moz-keyframes pulse-glow {
+   0%
+    {box-shadow: 0 0 20px 3px;}
+  50%
+    {box-shadow: 0 0 20px 8px;}
+  100%
+    {box-shadow: 0 0 20px 3px;}
+}
+
+/*NORMAL*/
+@keyframes rot {
+	from {
+		transform: rotate(0deg)
+		           translate(-2px, -2px)
+		           rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg)
+		           translate(-2px, -2px)
+		           rotate(-360deg);
+	}
+}
+
+@keyframes rotNeg {
+	from {
+		transform: rotate(0deg)
+		           translate(-2px, -2px)
+		           rotate(0deg);
+	}
+	to {
+		transform: rotate(-360deg)
+		           translate(-2px, -2px)
+		           rotate(360deg);
+	}
+}
+
+@keyframes glow {
+   0%
+    {box-shadow: 0 0 20px 3px;}
+  50%
+    {box-shadow: 0 0 30px 6px;}
+  100%
+    {box-shadow: 0 0 20px 3px;}
+}
+
+@keyframes pulse-glow {
+   0%
+    {box-shadow: 0 0 20px 3px;}
+  50%
+    {box-shadow: 0 0 20px 8px;}
+  100%
+    {box-shadow: 0 0 20px 3px;}
 }
