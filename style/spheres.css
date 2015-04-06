@@ -1,0 +1,239 @@
+
+/*2*/
+.sphere_2{
+    position:relative;
+    top:30px;
+    margin:0px auto;
+    border-radius: 50%;
+	width: 35px;
+	height: 35px;
+	background-image: radial-gradient(
+            rgba(118, 180, 230, 0.8) 0%,
+            rgba(75, 157, 222, 0.7) 23%,
+            rgba(0, 0, 0, 0.1) 51%,
+            rgba(158, 202, 237, 0.7) 71%);
+
+    outline: none;
+    color: #9ecaed;
+	-webkit-animation: rot 4s infinite linear, glow 6s ease 0s infinite;
+}
+
+/*4*/
+.sphere_4{
+    position:relative;
+    float:right;
+    right:10px;
+    top:50px;
+    margin:0px auto;
+    border-radius: 50%;
+	width: 35px;
+	height: 35px;
+	background-image: radial-gradient(
+            rgba(255,255,157, 0.8) 0%,
+            rgba(75, 157, 222, 0.7) 23%,
+            rgba(0, 0, 0, 0.1) 51%,
+            rgba(158, 202, 237, 0.7) 71%);
+    outline: none;
+    color: rgb(75, 157, 222);
+	-webkit-animation: rotNeg 4s infinite linear, glow 6s ease 0s infinite;
+}
+
+/*8*/
+.sphere_8{
+    position:relative;
+    top:20px;
+    margin:0px auto;
+    border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	background-image: radial-gradient(
+            rgba(255,255,157, 0.8) 0%,
+            rgba(58,169,138, 0.7) 23%,
+            rgba(0, 0, 0, 0.1) 51%,
+            rgba(151,219,200, 0.7) 71%);
+    outline: none;
+    color: rgb(58,169,138);
+	-webkit-animation: rotNeg 6s infinite linear, glow 4s ease 0s infinite;
+}
+
+/*16*/
+.sphere_16{
+    position:relative;
+    top:20px;
+    margin:0px auto;
+    border-radius: 50%;
+	width: 70px;
+	height: 70px;
+	background-image: radial-gradient(
+            rgba(255,187,0, 0.8) 0%,
+            rgba(255,102,0, 0.7) 23%,
+            rgba(0, 0, 0, 0.1) 51%,
+            rgba(255,88,77, 0.7) 71%);
+    outline: none;
+    color: rgb(255,102,0);
+	-webkit-animation: rot 6s infinite linear, glow 4s ease 0s infinite, pulse 2s infinite linear;
+}
+
+/*32*/
+.sphere_32{
+    position:relative;
+    top:10px;
+    margin:0px auto;
+    border-radius: 50%;
+	width: 80px;
+	height: 80px;
+	background-image: radial-gradient(
+            rgba(255,102,0, 0.8) 0%,
+            rgba(230,0,43, 0.7) 15%,
+            rgba(0, 0, 0, 0.1) 35%,
+            rgba(120,0,113, 0.7) 51%,
+            rgba(0, 0, 0, 0.1) 55%,
+            rgba(255,77,110, 0.7) 71%);
+    outline: none;
+    color: rgb(255,26,69);
+	-webkit-animation: rotNeg 6s infinite linear, glow 4s ease 0s infinite, pulse 3s infinite linear;
+}
+
+/*64*/
+.sphere_64{
+    position:relative;
+    top:10px;
+    margin:0px auto;
+    border-radius: 50%;
+	width: 90px;
+	height: 90px;
+	background-image: radial-gradient(
+            rgba(255,102,0, 0.8) 0%,
+            rgba(230,0,43, 0.7) 15%,
+            rgba(0, 0, 0, 0.1) 35%,
+            rgba(120,0,113, 0.7) 51%,
+            rgba(0, 0, 0, 0.1) 55%,
+            rgba(255,77,110, 0.7) 71%);
+    outline: none;
+    color: rgb(255,26,69);
+	-webkit-animation: rotNeg 6s infinite linear, glow 4s ease 0s infinite, pulse 3s infinite linear;
+}
+
+/*128*/
+.sphere_128{
+    position:relative;
+    top:10px;
+    margin:0px auto;
+    border-radius: 50%;
+	width: 80px;
+	height: 80px;
+	background-image: radial-gradient(
+            rgba(118, 180, 230, 0.8) 0%,
+            rgba(75, 157, 222, 0.7) 15%,
+            rgba(0, 0, 0, 0.1) 35%,
+            rgba(75, 157, 222, 0.7) 55%,
+            rgba(0, 0, 0, 0.1) 66%,
+            rgba(158, 202, 237, 0.7) 71%);
+    outline: none;
+    color: blue;
+	-webkit-animation: rotNeg 6s infinite linear, glow 4s ease 0s infinite;
+}
+
+/*256*/
+.sphere_256{
+    position:relative;
+    top:10px;
+    margin:0px auto;
+    border-radius: 50%;
+	width: 80px;
+	height: 80px;
+	background-image: radial-gradient(
+            rgba(118, 180, 230, 0.8) 0%,
+            rgba(75, 157, 222, 0.7) 15%,
+            rgba(0, 0, 0, 0.1) 35%,
+            rgba(75, 157, 222, 0.7) 55%,
+            rgba(0, 0, 0, 0.1) 66%,
+            rgba(158, 202, 237, 0.7) 71%);
+    outline: none;
+    color: aqua;
+	-webkit-animation: rotNeg 6s infinite linear, glow 4s ease 0s infinite;
+}
+
+/*512*/
+.sphere_512{
+    position:relative;
+    top:10px;
+    margin:0px auto;
+    border-radius: 50%;
+	width: 100px;
+	height: 100px;
+	background-image: radial-gradient(
+            rgba(255,127,137, 0.8) 0%,
+            rgba(255,76,90, 0.7) 15%,
+            rgba(0, 0, 0, 0.1) 35%,
+            rgba(255,76,90, 0.7) 55%,
+            rgba(0, 0, 0, 0.1) 66%,
+            rgba(194,0,113, 0.7) 71%);
+    outline: none;
+    color: rgba(194,0,113, 0.7);
+	-webkit-animation: rotNeg 6s infinite linear, glow 4s ease 0s infinite;
+}
+
+/*1024*/
+
+/*2048*/
+
+
+@-webkit-keyframes rot {
+	from {
+		transform: rotate(0deg)
+		           translate(-2px, -2px)
+		           rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg)
+		           translate(-2px, -2px)
+		           rotate(-360deg);
+	}
+}
+
+@-webkit-keyframes rotNeg {
+	from {
+		transform: rotate(0deg)
+		           translate(-2px, -2px)
+		           rotate(0deg);
+	}
+	to {
+		transform: rotate(-360deg)
+		           translate(-2px, -2px)
+		           rotate(360deg);
+	}
+}
+
+@-webkit-keyframes glow {
+   0%
+    {box-shadow: 0 0 20px 3px;}
+  50%
+    {box-shadow: 0 0 20px 6px;}
+  100%
+    {box-shadow: 0 0 20px 3px;}
+}
+
+
+@-webkit-keyframes pulse {
+	0% {
+		transform: scale(0.95);
+		opacity: 0.7;
+	}
+	50% {
+		transform: scale(2.2);
+		opacity: 1;
+	}
+	100% {
+		transform: scale(0.95);
+		opacity: 0.7;
+	}
+}
+
+.pausedAnimations{
+    -webkit-animation-play-state: paused !important;
+}
+
+.runningAnimations{
+    -webkit-animation-play-state: running !important;
+}

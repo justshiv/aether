@@ -5,6 +5,7 @@
         <title>Aether</title>
 
         <link href="style/main.css" rel="stylesheet" type="text/css">
+        <link href="style/spheres.css" rel="stylesheet" type="text/css">
         <link rel="shortcut icon" href="favicon.png">
         <link rel="apple-touch-icon" href="meta/apple-touch-icon.png">
         <link rel="apple-touch-startup-image" href="meta/apple-touch-startup-image-640x1096.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)"> <!-- iPhone 5+ -->
@@ -97,3 +98,31 @@
         <script src="js/application.js"></script>
     </body>
 </html>
+
+<script>
+
+    //woosh sound effect when like tiles combine
+    var woosh = new Audio('woosh.wav');
+    woosh.volume = 0.5;
+    function repeatWoosh(){
+        woosh.pause();
+        woosh.currentTime = 0;
+        woosh.play();
+    }
+
+
+    var backgroundMusic = new Audio("backgroundSound.wav");
+    backgroundMusic.loop = true;
+    backgroundMusic.volume = 0.03;
+    backgroundMusic.addEventListener("ended", function(){
+        this.currentTime = 0;
+        this.play();
+    }, false);
+//    backgroundMusic.play();
+
+
+
+
+
+
+</script>

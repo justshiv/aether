@@ -62,7 +62,13 @@ HTMLActuator.prototype.addTile = function (tile) {
   this.applyClasses(wrapper, classes);
 
   inner.classList.add("tile-inner");
-  inner.textContent = tile.value;
+
+        var current = document.createElement("div");
+        current.classList.add("sphere_" + tile.value.toString());
+        //current.classList.add(animationClass);
+        inner.appendChild(current);
+
+  //inner.textContent = tile.value;
 
   if (tile.previousPosition) {
     // Make sure that the tile gets rendered in the previous position first
@@ -73,6 +79,8 @@ HTMLActuator.prototype.addTile = function (tile) {
   } else if (tile.mergedFrom) {
     classes.push("tile-merged");
     this.applyClasses(wrapper, classes);
+
+
 
     // Render the tiles that merged
     tile.mergedFrom.forEach(function (merged) {
@@ -115,6 +123,7 @@ HTMLActuator.prototype.updateScore = function (score) {
     var addition = document.createElement("div");
     addition.classList.add("score-addition");
     addition.textContent = "+" + difference;
+      repeatWoosh();
 
     this.scoreContainer.appendChild(addition);
   }
