@@ -1,12 +1,25 @@
 
 /*new fonts*/
-@import url('http://fonts.googleapis.com/css?family=Megrim');
-@import url('http://fonts.googleapis.com/css?family=Quicksand');
-html, body {
-  margin: 0;
-  padding: 0;
-    height: 100%;
+@font-face {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 400;
+  src: url(fonts/quicksand.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
 
+/* latin */
+@font-face {
+  font-family: 'Megrim';
+  font-style: normal;
+  font-weight: 400;
+  src: url(fonts/megrim.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+html{}
+
+body {
     /*new text style*/
     color: hsla(0, 0%, 100%, 1);
     font-family: "Quicksand", "Helvetica Neue", Arial, sans-serif;
@@ -16,26 +29,31 @@ html, body {
     background: hsla(0, 0%, 0%, 1) url("../bakcground.jpg") repeat;
 }
 
-#page-content{
-    min-height:100%;
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
-#footer {
-    /*style required for sticky footer*/
-    text-align: center;
-    position: relative;
-    height:100px;
-    clear:both;
 
-    /*look of footer*/
+main {
+    flex: 1;
+}
+
+footer {
     opacity:0.5;
-    padding-top:80px;
-    font-size:15px;
+    font-size:0.9em;
+    text-align: center;
+}
+
+main, footer {
+    padding: .5em calc(50% - 400px);
 }
 
 .heading:after {
-  content: "";
-  display: block;
-  clear: both; }
+    content: "";
+    display: block;
+    clear: both;
+}
 
 h1.title {
     /*new title styling*/
@@ -76,8 +94,8 @@ h1.title {
     opacity: 0; } }
 .scores-container {
     margin-top:20px;
-  float: right;
-  text-align: right; }
+    float: right;
+    text-align: right; }
 
 .score-container, .best-container {
   position: relative;
@@ -130,9 +148,10 @@ h1.title {
   content: "Best"; }
 
 p {
-  margin-top: 0;
-  margin-bottom: 10px;
-  line-height: 1.65; }
+    margin-top: 0;
+    margin-bottom: 10px;
+    line-height: 1.65;
+}
 
 a {
     /*changed color for aether*/

@@ -7,7 +7,7 @@ Developed for my User Experience in Games honours module at UCT. [Play here](htt
 Showing in-game play. Coming shortly.
 
 <p align="center">
-  <img src="" alt="Screenshot"/>
+  <img src="screenshot.png" alt="Screenshot"/>
 </p>
 
 
