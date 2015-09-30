@@ -31,7 +31,7 @@ body {
     font-size: 18px;
 
     /*new background*/
-    background: hsla(0, 0%, 0%, 1) url("../bakcground.jpg") repeat;
+    background: hsla(0, 0%, 0%, 1) url("../background.jpg") repeat;
 }
 
 main {
@@ -367,7 +367,7 @@ hr {
   transition-property: transform; }
   .tile .tile-inner {
     /*galaxy background for tiles*/
-    background: url("../bakcground.jpg");
+    background: url("../tile.jpg");
     border-radius: 3px;
     text-align: center;
     font-weight: bold;
