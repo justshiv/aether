@@ -20,6 +20,11 @@
 html{}
 
 body {
+    /*makes footer sticky*/
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
     /*new text style*/
     color: hsla(0, 0%, 100%, 1);
     font-family: "Quicksand", "Helvetica Neue", Arial, sans-serif;
@@ -27,12 +32,6 @@ body {
 
     /*new background*/
     background: hsla(0, 0%, 0%, 1) url("../bakcground.jpg") repeat;
-}
-
-body{
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
 }
 
 main {

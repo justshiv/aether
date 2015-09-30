@@ -1,18 +1,24 @@
+.sphere {
+	width: 25%;
+	height: 25%;
+    position:relative;
+    margin: auto;
+    border-radius: 50%;
+    outline: none;
+}
+
+.tile-inner {
+    display: flex;
+    min-height: 57px;
+    margin: 0;
+}
 
 /*2*/
 .sphere_2{
-    position:relative;
-    top:30px;
-    margin:0px auto;
-    border-radius: 50%;
-	width: 25px;
-	height: 25px;
 	background-image: radial-gradient(
             rgba(175, 210, 230, 0.9) 0%,
             rgba(102, 112, 141, 0.8) 30%,
             rgba(0, 0, 0, 0.1) 60%);
-
-    outline: none;
     color: #afd2e6;
 	-webkit-animation: rot 2s infinite linear;
     -moz-animation: rot 2s infinite linear;
@@ -21,19 +27,11 @@
 
 /*4*/
 .sphere_4{
-    position:relative;
-    top:40px;
-    margin:0px auto;
-    border-radius: 50%;
-	width: 25px;
-	height: 25px;
 	background-image: radial-gradient(
             rgba(175, 210, 230, 0.80) 0%,
             rgba(102, 112, 141, 0.70) 23%,
             rgba(0, 0, 0, 0.1) 51%,
             rgba(187, 218, 237, 0.70) 71%);
-
-    outline: none;
     color: #afd2e6;
 	-webkit-animation: rotNeg 2s infinite linear, glow 6s ease 0s infinite;
 	-moz-animation: rotNeg 2s infinite linear, glow 6s ease 0s infinite;
@@ -43,12 +41,8 @@
 
 /*8*/
 .sphere_8{
-    position:relative;
-    top:30px;
-    margin:0px auto;
-    border-radius: 50%;
-	width: 35px;
-	height: 35px;
+	width: 35%;
+	height: 35%;
 	background-image: radial-gradient(
             rgba(118, 180, 230, 0.8) 0%,
             rgba(42, 116, 186, 0.70) 23%,
@@ -64,12 +58,8 @@
 
 /*16*/
 .sphere_16{
-    position:relative;
-    top:20px;
-    margin:0px auto;
-    border-radius: 50%;
-	width: 45px;
-	height: 45px;
+	width: 45%;
+	height: 45%;
 	background-image: radial-gradient(
             rgba(183, 255, 91, 0.80) 0%,
             rgba(58,169,138, 0.7) 23%,
@@ -84,18 +74,13 @@
 
 /*32*/
 .sphere_32{
-    position:relative;
-    top:20px;
-    margin:0px auto;
-    border-radius: 50%;
-	width: 55px;
-	height: 55px;
+	width: 55%;
+	height: 55%;
 	background-image: radial-gradient(
             rgba(255, 245, 121, 0.80) 0%,
             rgba(255, 177, 37, 0.70) 23%,
             rgba(0, 0, 0, 0.1) 51%,
             rgba(110, 169, 79, 0.70) 71%);
-    outline: none;
     color: rgb(55, 186, 125);
 	-webkit-animation: rot 5s infinite linear, pulse-glow 4s ease 0s infinite;
 	-moz-animation: rot 5s infinite linear, pulse-glow 4s ease 0s infinite;
@@ -104,18 +89,13 @@
 
 /*64*/
 .sphere_64{
-    position:relative;
-    top:20px;
-    margin:0px auto;
-    border-radius: 50%;
-	width: 65px;
-	height: 65px;
+	width: 65%;
+	height: 65%;
 	background-image: radial-gradient(
             rgba(255, 166, 104, 0.80) 0%,
             rgba(255,102,0, 0.70) 23%,
             rgba(0, 0, 0, 0.1) 51%,
             rgba(255, 202, 44, 0.70) 71%);
-    outline: none;
     color: rgb(255, 177, 37);
 	-webkit-animation: rot 6s infinite linear, glow 3s ease 0s infinite;
 	-moz-animation: rot 6s infinite linear, glow 3s ease 0s infinite;
@@ -124,18 +104,13 @@
 
 /*128*/
 .sphere_128{
-    position:relative;
-    top:20px;
-    margin:0px auto;
-    border-radius: 50%;
-	width: 75px;
-	height: 75px;
+	width: 75%;
+	height: 75%;
 	background-image: radial-gradient(
             rgba(255, 142, 144, 0.80) 0%,
             rgba(255, 35, 62, 0.70) 23%,
             rgba(0, 0, 0, 0.1) 51%,
             rgba(255, 71, 29, 0.70) 71%);
-    outline: none;
     color: rgb(255, 71, 29);
 	-webkit-animation: rot 7s infinite linear, glow 4s ease 0s infinite;
 	-moz-animation: rot 7s infinite linear, glow 4s ease 0s infinite;
@@ -144,12 +119,8 @@
 
 /*256*/
 .sphere_256{
-    position:relative;
-    top:10px;
-    margin:0px auto;
-    border-radius: 50%;
-	width: 85px;
-	height: 85px;
+	width: 85%;
+	height: 85%;
 	background-image: radial-gradient(
             rgb(182, 106, 176) 0%,
             rgba(147, 78, 141, 0.70) 15%,
@@ -157,7 +128,6 @@
             rgba(58, 186, 140, 0.70) 45%,
             rgba(147, 65, 132, 0.3) 60%,
             rgba(255, 49, 108, 0.70) 75%);
-    outline: none;
     color: rgba(255, 49, 108, 0.73);
 	-webkit-animation: rotNeg 6s infinite linear, pulse-glow 2s ease 0s infinite;
 	-moz-animation: rotNeg 6s infinite linear, pulse-glow 2s ease 0s infinite;
@@ -167,12 +137,8 @@
 
 /*512*/
 .sphere_512{
-    position:relative;
-    top:10px;
-    margin:0px auto;
-    border-radius: 50%;
-	width: 95px;
-	height: 95px;
+	width: 95%;
+	height: 95%;
 	background-image: radial-gradient(
             rgba(255, 245, 121, 0.8) 0%,
             rgba(178, 255, 88, 0.70) 15%,
@@ -180,7 +146,6 @@
             rgba(147, 65, 132, 0.70) 55%,
             rgba(0, 0, 0, 0.1) 66%,
             rgba(58, 186, 140, 0.70) 71%);
-    outline: none;
     color: rgb(58, 186, 140);
 	-webkit-animation: rotNeg 6s infinite linear, glow 4s ease 0s infinite;
 	-moz-animation: rotNeg 6s infinite linear, glow 4s ease 0s infinite;

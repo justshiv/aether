@@ -64,6 +64,7 @@ HTMLActuator.prototype.addTile = function (tile) {
   inner.classList.add("tile-inner");
 
         var current = document.createElement("div");
+        current.classList.add("sphere");
         current.classList.add("sphere_" + tile.value.toString());
         //current.classList.add(animationClass);
         inner.appendChild(current);
